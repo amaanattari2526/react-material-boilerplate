@@ -12,12 +12,12 @@ export default function UserList() {
     }
 
     return (
-        <Box>
-            <Box>
-            <AppAutoComplete label="Select Country" allowIcons={true} data={countries} onSelect={onSelectAutoComplete} />
-            <AppAutoComplete label="Organisation" allowIcons={false} data={organisations} onSelect={onSelectAutoComplete} />
+        
+            <Box xs={{display: 'flex'}}>
+            <AppAutoComplete size="small" label="Select Country" allowIcons={true} data={countries} onSelect={onSelectAutoComplete} />
+            <AppAutoComplete size="small" label="Organisation" allowIcons={false} data={organisations} onSelect={onSelectAutoComplete} />
             </Box>
-        </Box>
+        
     )
 }
 

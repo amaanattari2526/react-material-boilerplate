@@ -6,6 +6,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 export default function AppAutoComplete(props_) {
   return (
     <Autocomplete
+    size={props_.size}
     onChange={(e, newValue) => {
         console.log(newValue);
         if(props_.onSelect) props_.onSelect(newValue)
