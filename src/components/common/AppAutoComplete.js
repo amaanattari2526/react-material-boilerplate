@@ -15,17 +15,17 @@ export default function AppAutoComplete(props_) {
       sx={{ width: 300 }}
       options={props_.data}
       autoHighlight
-      getOptionLabel={(option) => option.label}
+      getOptionLabel={(option) => option.title}
       renderOption={(props, option) => (
         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
           {props_.allowIcons == true ? <img
             loading="lazy"
             width="20"
-            src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
-            srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
+            src={`https://flagcdn.com/w20/${option.id.toLowerCase()}.png`}
+            srcSet={`https://flagcdn.com/w40/${option.id.toLowerCase()}.png 2x`}
             alt=""
           /> : null}
-          {option.label} ({option.code}) +{option.phone}
+          {option.title}
         </Box>
       )}
       renderInput={(params) => (
