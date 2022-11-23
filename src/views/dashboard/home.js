@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 import httpClient from '../../http';
 export default function DashboardHome() {
